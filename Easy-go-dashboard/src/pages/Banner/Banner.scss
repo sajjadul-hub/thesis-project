@@ -1,0 +1,134 @@
+.banner-add {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  h1 {
+    font-size: 30px;
+  }
+}
+button {
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+// Banner Form styling
+
+@import "../../styles/variables.scss";
+.img-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .img {
+      width: 120px;
+      height: 120px;
+      border: 1.5px solid $soft-color;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+    }
+  }
+  h1 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: $soft-color;
+  }
+}
+.form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 9px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    label {
+      font-size: 14px;
+    }
+
+    input {
+      padding: 10px;
+      background-color: transparent;
+      color: white;
+      outline: none;
+      border: 1px solid $soft-color;
+      border-radius: 3px;
+      width: 100%;
+    }
+    select {
+      padding: 10px;
+      background-color: #2a3447;
+      color: white;
+      outline: none;
+      border: 1px solid $soft-color;
+      width: 100%;
+    }
+  }
+}
+.banner-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 20px 0;
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid $soft-color;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    resize: none;
+    background-color: transparent;
+  }
+  .word-count {
+    margin-top: 10px 0;
+    color: #777;
+    font-size: 14px;
+    width: 200px;
+  }
+  textarea:focus {
+    outline: none;
+  }
+}
+.m_button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  button {
+    color: $dark-color;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background: none;
+  }
+}
+@media screen and (max-width: "768px") {
+  .form-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,27 @@
+.prescription-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .prescription-img {
+    flex: 1;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .author {
+    line-height: 30px;
+    button {
+      padding: 3px;
+      background-color: aqua;
+      outline: none;
+      border: none;
+      border-radius: 6px;
+    }
+  }
+}
+h3 {
+  margin: 20px 0;
+}

@@ -1,0 +1,64 @@
+.orderContainer {
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .orderForm {
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: space-between;
+    table {
+      margin-top: 12px;
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 100%;
+      thead {
+        .t-head {
+          background: #f2f2f2;
+          padding: 8px;
+          color: #363062;
+        }
+      }
+      tr {
+        padding: 8px;
+        td {
+          padding: 9px;
+          border: 1.5px solid palegreen;
+          .status-btn {
+            cursor: pointer;
+            padding: 3px;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            background: transparent;
+            color: white;
+          }
+        }
+        .status-td {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .payment,
+          .shipping {
+            border: none;
+            outline: none;
+            background: transparent;
+            img {
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .orderForm::-webkit-scrollbar {
+    width: 0;
+  }
+}

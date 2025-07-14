@@ -1,0 +1,28 @@
+.input-field {
+  position: relative;
+}
+.input-field input {
+  width: 350px;
+  height: 30px;
+  font-size: 18px;
+  border-bottom: 2px solid #c3d6cc;
+  background: transparent;
+  color: #313132;
+  outline: none;
+}
+.input-field label {
+  position: absolute;
+  top: 40%;
+  left: 1px;
+  transform: translateY(-50%);
+  color: #777e90;
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.input-field input:focus + label {
+  top: -30%;
+}
+input:focus {
+  border-bottom: 1.5px solid #3cbd96;
+}

@@ -1,0 +1,27 @@
+.control-form .s-input,
+.s-select {
+  font-size: 18px;
+  border-bottom: 1.5px solid #c3d6cc;
+  background: transparent;
+  color: #313132;
+  outline: none;
+  color: #777e90;
+  width: 100%;
+}
+input[type="date"] {
+  color: #18ffff;
+}
+.vertical {
+  justify-content: space-evenly !important;
+}
+.control-form label {
+  color: #777e90;
+  font-size: 30px;
+  pointer-events: none;
+  transition: 0.3s;
+  color: #23262f;
+  font-weight: 600;
+}
+.control-form .s-input:focus {
+  border-bottom: 1.5px solid #18ffff;
+}

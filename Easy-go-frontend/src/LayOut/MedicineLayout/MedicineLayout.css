@@ -1,0 +1,26 @@
+.m_active {
+  background-color: #3cbd96;
+  color: white;
+  border-radius: 7px;
+}
+.m_active .text {
+  color: white;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Show the sidebar for medium screens (768px and below) */
+@media (max-width: 768px) {
+  .sidebar-visible {
+    margin-top: 100px;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,40 @@
+/* styles.scss */
+.data-table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 3px;
+
+  .table-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+    margin: 10px 0px;
+    border-radius: 7px;
+  }
+
+  .table-body {
+    .loading-skeleton {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+
+      height: 40px; // Set the height of each row
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

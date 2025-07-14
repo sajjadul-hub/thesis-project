@@ -1,0 +1,97 @@
+@import "../../styles/variables.scss";
+.users {
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    button {
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}
+.user-wrapper {
+  .user-details {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 30px;
+    background-color: white;
+    border-radius: 7px;
+    color: #2a3447;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 30px 0px;
+    .user-photo {
+      width: 200px;
+      height: 200px;
+      border: 1.5px solid #3433;
+      border-radius: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+    .user-info {
+      line-height: 30px;
+      .user-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        span {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        img {
+          width: 23px;
+          height: 23px;
+          object-fit: cover;
+        }
+      }
+      span {
+        .user-name {
+          line-height: 0;
+          display: inline-block;
+        }
+        .admin {
+          display: inline;
+          margin-left: 12px;
+          font-size: 10px;
+          background: #0e9d3652;
+          font-weight: 500;
+          padding: 2px;
+          border-radius: 6px;
+        }
+      }
+      .user-id {
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 600;
+      }
+      .created-date {
+        span {
+          font-weight: 600;
+        }
+      }
+      button {
+        padding: 6px 12px;
+        outline: none;
+        border: none;
+        background: #2a3447;
+        border-radius: 9px;
+        cursor: pointer;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 10px 0px;
+      }
+    }
+  }
+}
